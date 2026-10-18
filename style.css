@@ -1,0 +1,314 @@
+:root {
+  --verde: #1f2a24;
+  --osso: #f5f3ee;
+  --pedra: #dcd6c9;
+  --latao: #a8863a;
+  --vinho: #7a2430;
+  --titulo: "Bodoni Moda", serif;
+  --texto: "Manrope", sans-serif;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: var(--texto);
+  background: var(--osso);
+  color: var(--verde);
+  line-height: 1.6;
+}
+
+a {
+  color: inherit;
+}
+:focus-visible {
+  outline: 3px solid var(--latao);
+  outline-offset: 3px;
+}
+
+/* Cabeçalho */
+.topo {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1.5rem;
+  padding: 1.2rem 5%;
+  background: var(--verde);
+  color: var(--osso);
+  position: sticky;
+  top: 0;
+  z-index: 10;
+}
+.logo {
+  font-family: var(--titulo);
+  font-size: 1.7rem;
+  font-weight: 700;
+  letter-spacing: 0.18em;
+  text-decoration: none;
+  color: var(--latao);
+}
+.bandeira {
+  width: 24px;
+  height: auto;
+  vertical-align: middle;
+  margin-left: 8px;
+}
+nav {
+  display: flex;
+  gap: 2rem;
+}
+nav a {
+  text-decoration: none;
+  font-size: 0.95rem;
+}
+nav a:hover {
+  color: var(--latao);
+}
+
+/* Botões */
+.botao {
+  display: inline-block;
+  padding: 0.8rem 1.6rem;
+  text-decoration: none;
+  font-weight: 700;
+  font-size: 0.95rem;
+  border-radius: 2px;
+}
+.botao-escuro {
+  background: var(--latao);
+  color: var(--verde);
+}
+.botao-latao {
+  background: var(--latao);
+  color: var(--verde);
+}
+.botao:hover {
+  background: var(--osso);
+}
+
+/* Capa */
+.capa {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  min-height: calc(100vh - 70px);
+}
+.capa-texto {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 1.5rem;
+  padding: 4rem 6%;
+}
+.capa h1 {
+  font-family: var(--titulo);
+  font-size: clamp(2rem, 4vw, 3.4rem);
+  line-height: 1.15;
+  font-weight: 500;
+  max-width: 16ch;
+}
+.capa p {
+  max-width: 42ch;
+  font-size: 1.1rem;
+}
+.capa .botao:hover {
+  background: var(--verde);
+  color: var(--osso);
+}
+
+/* Troque img/capa.jpg pela sua foto. Sem a foto, aparece o degradê. */
+.capa-foto {
+  background:
+    url("img/capa.jpg") center / cover no-repeat,
+    linear-gradient(160deg, #3b4a40, #1f2a24 60%, #7a2430);
+}
+
+/* Seções */
+.secao {
+  padding: 5rem 6%;
+}
+.secao h2,
+.rodape h2 {
+  font-family: var(--titulo);
+  font-size: clamp(1.7rem, 3vw, 2.4rem);
+  font-weight: 500;
+  margin-bottom: 2.5rem;
+}
+.fundo-pedra {
+  background: var(--pedra);
+}
+
+/* Projetos */
+.cards {
+  display: grid;
+  grid-template-columns: 1.4fr 1fr 1fr;
+  gap: 1.5rem;
+}
+.card-foto {
+  aspect-ratio: 4 / 5;
+  margin-bottom: 1rem;
+  background-color: var(--pedra);
+}
+.card:first-child .card-foto {
+  aspect-ratio: 4 / 4.6;
+}
+.foto1 {
+  background:
+    url("img/projeto1.jpg") center / cover,
+    linear-gradient(160deg, #a8863a, #5c4a1e);
+}
+.foto2 {
+  background:
+    url("img/projeto2.jpg") center / cover,
+    linear-gradient(160deg, #7a2430, #3d1219);
+}
+.foto3 {
+  background:
+    url("img/projeto3.jpg") center / cover,
+    linear-gradient(160deg, #3b4a40, #1f2a24);
+}
+.card h3 {
+  font-family: var(--titulo);
+  font-size: 1.3rem;
+  font-weight: 500;
+}
+.card p {
+  font-size: 0.95rem;
+  max-width: 36ch;
+}
+
+/* Passos */
+.passos {
+  list-style: none;
+  counter-reset: passo;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 2rem;
+}
+.passos li {
+  counter-increment: passo;
+}
+.passos li::before {
+  content: counter(passo);
+  display: block;
+  font-family: var(--titulo);
+  font-size: 2.6rem;
+  color: var(--vinho);
+  line-height: 1;
+  margin-bottom: 0.8rem;
+}
+.passos strong {
+  display: block;
+  margin-bottom: 0.3rem;
+}
+
+/* Dúvidas */
+.duvidas {
+  max-width: 720px;
+}
+.duvida {
+  border-bottom: 1px solid var(--pedra);
+}
+.duvida-botao {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  gap: 1rem;
+  padding: 1.2rem 0;
+  background: none;
+  border: none;
+  font: inherit;
+  font-weight: 700;
+  color: inherit;
+  text-align: left;
+  cursor: pointer;
+}
+.duvida-botao span {
+  color: var(--latao);
+  font-size: 1.4rem;
+  line-height: 1;
+}
+.duvida-resposta {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.3s ease;
+}
+.duvida-resposta p {
+  padding-bottom: 1.2rem;
+  max-width: 60ch;
+}
+.duvida.aberta .duvida-resposta {
+  max-height: 200px;
+}
+
+/* Rodapé */
+.rodape {
+  background: var(--verde);
+  color: var(--osso);
+  padding: 5rem 6% 2rem;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 1.2rem;
+}
+.rodape h2 {
+  margin-bottom: 0;
+}
+.rodape small {
+  margin-top: 3rem;
+  opacity: 0.7;
+}
+
+/* Celular */
+@media (max-width: 800px) {
+  nav {
+    display: none;
+  }
+  .topo {
+    padding: 1rem 5%;
+    gap: 1rem;
+  }
+  .logo {
+    font-size: 1.3rem;
+    letter-spacing: 0.12em;
+    white-space: nowrap;
+  }
+  .bandeira {
+    width: 20px;
+    margin-left: 4px;
+  }
+  .topo .botao {
+    padding: 0.6rem 0.9rem;
+    font-size: 0.85rem;
+    white-space: nowrap;
+  }
+  .capa {
+    grid-template-columns: 1fr;
+  }
+  .capa-foto {
+    min-height: 280px;
+    order: -1;
+  }
+  .cards,
+  .passos {
+    grid-template-columns: 1fr;
+  }
+  .card:first-child .card-foto {
+    aspect-ratio: 4 / 5;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+  .duvida-resposta {
+    transition: none;
+  }
+}
