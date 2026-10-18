@@ -22,8 +22,7 @@ Abra o arquivo `index.html` no navegador.
 
 ## Créditos
 
-- Desenvolvido por Leandro Massuquetto.
-- 
+- Desenvolvido por Leandro Massuquetto.  
 - Fotos de bancos de imagens gratuitos (Unsplash e Pexels).
 - ROMA é uma marca de demonstração e os botões de WhatsApp usam um número de exemplo.
 -
