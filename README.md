@@ -1,28 +1,34 @@
-# ROMA | Marcenaria sob medida
+ROMA | Marcenaria sob medida
 
-Site modelo para empresas de marcenaria e móveis planejados. Feito com HTML, CSS e JavaScript, pronto para adaptar com o nome, as fotos e o contato de cada cliente.
+Site modelo para empresas de marcenaria e móveis planejados. Desenvolvido com HTML, CSS e JavaScript, com estrutura pronta para adaptar ao nome, às fotos e aos contatos de cada cliente.
 
-## O que tem
+O que tem
 
-- Capa com foto e botão de orçamento pelo WhatsApp
-- Projetos entregues em cards
+- Capa com foto e botão de orçamento
+- Projetos entregues apresentados em cards
 - Passo a passo do atendimento
 - Perguntas frequentes
-- Layout que se adapta ao celular
+- Layout responsivo, adaptado para celulares
 
-## Como ver
+Como ver
 
-Abra o arquivo `index.html` no navegador.
+"Acessar o site publicado" (https://roma-marcenaria.leandromassuquetto.workers.dev/)
 
-## Como adaptar para uma empresa
+Como adaptar para uma empresa
 
-- Troque o nome e os textos no `index.html`
-- Troque as fotos na pasta `img`, mantendo os nomes dos arquivos
-- Troque o número do WhatsApp nos links `wa.me`
+- Altere o nome e os textos no "index.html".
+- Substitua as fotos na pasta "img", mantendo os nomes dos arquivos quando necessário.
+- Configure o número de WhatsApp da empresa nos links "wa.me".
 
-## Créditos
+Tecnologias utilizadas
 
-- Desenvolvido por Leandro Massuquetto.  
-- Fotos de bancos de imagens gratuitos (Unsplash e Pexels).
-- ROMA é uma marca de demonstração e os botões de WhatsApp usam um número de exemplo.
--
+- HTML5
+- CSS3
+- JavaScript
+
+Créditos
+
+- Desenvolvido por Leandro Massuquetto.
+- Fotos de bancos de imagens gratuitos, como Unsplash e Pexels.
+- ROMA é uma marca de demonstração, sem vínculo com uma empresa real.
+- Os contatos e botões de orçamento devem ser configurados para cada cliente antes do uso comercial.
