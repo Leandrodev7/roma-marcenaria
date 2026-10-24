@@ -170,7 +170,7 @@ nav a:hover {
 }
 .foto3 {
   background:
-    url("img/Projeto3.jpg") center / cover,
+    url("img/projeto3.jpg") center / cover,
     linear-gradient(160deg, #3b4a40, #1f2a24);
 }
 .card h3 {
